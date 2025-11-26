@@ -31,7 +31,11 @@ const Index = () => {
               <button onClick={() => scrollToSection('features')} className="text-foreground/80 hover:text-primary transition-colors">Услуги</button>
               <button onClick={() => scrollToSection('faq')} className="text-foreground/80 hover:text-primary transition-colors">Вопросы</button>
               <button onClick={() => scrollToSection('contact')} className="text-foreground/80 hover:text-primary transition-colors">Контакты</button>
-              <Button className="bg-primary hover:bg-primary/90">Скачать приложение</Button>
+              <Button asChild className="bg-primary hover:bg-primary/90">
+                <a href="https://t.me/UniBusTrackerbot" target="_blank" rel="noopener noreferrer">
+                  Открыть бота
+                </a>
+              </Button>
             </div>
           </div>
         </div>
@@ -48,9 +52,11 @@ const Index = () => {
               Узнай, где твой университетский автобус прямо сейчас. Планируй время, а не мерзни на остановке 40 минут.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
-                <Icon name="Download" className="mr-2" size={20} />
-                Скачать бесплатно
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8">
+                <a href="https://t.me/UniBusTrackerbot" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Send" className="mr-2" size={20} />
+                  Открыть Telegram бота
+                </a>
               </Button>
               <Button size="lg" variant="outline" className="text-lg px-8">
                 <Icon name="Play" className="mr-2" size={20} />
@@ -492,7 +498,7 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
               { icon: 'Mail', title: 'Email', value: 'support@bustrack.ru', link: 'mailto:support@bustrack.ru' },
-              { icon: 'MessageCircle', title: 'Telegram', value: '@bustrack_support', link: 'https://t.me/bustrack_support' },
+              { icon: 'MessageCircle', title: 'Telegram', value: '@UniBusTrackerbot', link: 'https://t.me/UniBusTrackerbot' },
               { icon: 'Phone', title: 'Телефон', value: '+7 (999) 123-45-67', link: 'tel:+79991234567' }
             ].map((contact, idx) => (
               <Card key={idx} className="border-2 text-center hover:shadow-lg transition-all hover:-translate-y-1">
