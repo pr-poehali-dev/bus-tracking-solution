@@ -65,37 +65,15 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="mt-16 relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 blur-3xl" />
-            <Card className="relative overflow-hidden border-2 shadow-2xl">
-              <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8">
-                <div className="bg-white rounded-lg p-6 shadow-lg">
-                  <div className="flex items-center justify-between mb-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                        <Icon name="Bus" className="text-primary" size={24} />
-                      </div>
-                      <div>
-                        <h3 className="font-heading font-bold text-lg">Автобус №3</h3>
-                        <p className="text-sm text-muted-foreground">Корпус → Общежитие</p>
-                      </div>
-                    </div>
-                    <Badge className="bg-green-500/10 text-green-700 border-green-500/20">В пути</Badge>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                      <span className="text-sm">До остановки <span className="font-semibold">5 минут</span></span>
-                    </div>
-                    <div className="bg-accent/50 rounded-lg p-3">
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-muted-foreground">Следующий автобус через</span>
-                        <span className="font-bold text-primary">22 минуты</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div className="mt-16 grid md:grid-cols-3 gap-6">
+            <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all">
+              <img src="https://cdn.poehali.dev/files/ae4fe3d4-f9ce-4764-afcc-ca4e91bfad99.png" alt="Telegram бот - Старт" className="w-full h-auto" />
+            </Card>
+            <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all">
+              <img src="https://cdn.poehali.dev/files/27a71992-a811-4687-be1a-fea669583dbb.png" alt="Telegram бот - Помощь" className="w-full h-auto" />
+            </Card>
+            <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all">
+              <img src="https://cdn.poehali.dev/files/af060e54-d96c-48a7-aa53-05f05f009dcf.png" alt="Telegram бот - Маршруты" className="w-full h-auto" />
             </Card>
           </div>
         </div>
@@ -141,10 +119,10 @@ const Index = () => {
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { num: '1', icon: 'Download', title: 'Скачай приложение', desc: 'Бесплатно в App Store и Google Play' },
-              { num: '2', icon: 'MapPin', title: 'Выбери маршрут', desc: 'Укажи свою остановку и направление' },
-              { num: '3', icon: 'Bell', title: 'Получай уведомления', desc: 'Push когда автобус подъезжает' },
-              { num: '4', icon: 'ThumbsUp', title: 'Планируй время', desc: 'Выходи точно к автобусу' }
+              { num: '1', icon: 'Send', title: 'Открой бота', desc: 'Найди @UniBusTrackerbot в Telegram' },
+              { num: '2', icon: 'MessageSquare', title: 'Напиши команду', desc: 'Введи /start или номер маршрута' },
+              { num: '3', icon: 'MapPin', title: 'Узнай расписание', desc: 'Бот покажет время прибытия автобуса' },
+              { num: '4', icon: 'Clock', title: 'Планируй выход', desc: 'Знаешь точно когда выходить из дома' }
             ].map((step, idx) => (
               <div key={idx} className="relative">
                 <div className="text-center">
@@ -298,16 +276,16 @@ const Index = () => {
               },
               {
                 name: 'Студент',
-                price: '99 ₽',
+                price: '300 ₽',
                 period: 'в месяц',
                 features: ['Отслеживание в реальном времени', 'Неограниченные push-уведомления', 'Без рекламы', 'История поездок', 'Приоритетная поддержка'],
                 popular: true
               },
               {
                 name: 'Семестр',
-                price: '399 ₽',
+                price: '3000 ₽',
                 period: '6 месяцев',
-                features: ['Все возможности тарифа Студент', 'Экономия 33%', 'Статистика за семестр', 'Раннее получение новых функций', 'Значок активного пользователя'],
+                features: ['Все возможности тарифа Студент', 'Экономия 50%', 'Статистика за семестр', 'Раннее получение новых функций', 'Значок активного пользователя'],
                 popular: false
               }
             ].map((plan, idx) => (
