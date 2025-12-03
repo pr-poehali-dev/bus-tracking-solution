@@ -34,10 +34,10 @@ const HeroSection = ({ isVisible }: HeroSectionProps) => {
             <img src="https://cdn.poehali.dev/files/ae4fe3d4-f9ce-4764-afcc-ca4e91bfad99.png" alt="Telegram бот - Старт" className="w-full block" />
           </Card>
           <Card className="overflow-hidden border-2 shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] transition-all hover:scale-105 bg-white p-0">
-            <img src="https://cdn.poehali.dev/files/27a71992-a811-4687-be1a-fea669583dbb.png" alt="Telegram бот - Помощь" className="w-full block" />
+            <img src="https://cdn.poehali.dev/files/27a71992-a811-4687-be1a-fea669583dbb.png" alt="Telegram бот - Помощь" className="w-full h-full block object-cover" />
           </Card>
           <Card className="overflow-hidden border-2 shadow-2xl hover:shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25)] transition-all hover:scale-105 bg-white p-0">
-            <img src="https://cdn.poehali.dev/files/af060e54-d96c-48a7-aa53-05f05f009dcf.png" alt="Telegram бот - Маршруты" className="w-full block" />
+            <img src="https://cdn.poehali.dev/files/af060e54-d96c-48a7-aa53-05f05f009dcf.png" alt="Telegram бот - Маршруты" className="w-full h-full block object-cover" />
           </Card>
         </div>
       </div>
