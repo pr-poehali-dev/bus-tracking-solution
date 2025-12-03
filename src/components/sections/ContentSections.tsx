@@ -239,8 +239,14 @@ const ContentSections = () => {
                       </li>
                     ))}
                   </ul>
-                  <Button className={`w-full ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} variant={plan.popular ? 'default' : 'outline'}>
-                    {plan.price === '0 ₽' ? 'Начать бесплатно' : 'Выбрать тариф'}
+                  <Button 
+                    asChild 
+                    className={`w-full ${plan.popular ? 'bg-primary hover:bg-primary/90' : ''}`} 
+                    variant={plan.popular ? 'default' : 'outline'}
+                  >
+                    <a href="https://t.me/UniBusTrackerbot" target="_blank" rel="noopener noreferrer">
+                      {plan.price === '0 ₽' ? 'Начать бесплатно' : 'Выбрать тариф'}
+                    </a>
                   </Button>
                 </CardContent>
               </Card>

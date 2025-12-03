@@ -30,14 +30,14 @@ const HeroSection = ({ isVisible }: HeroSectionProps) => {
         </div>
 
         <div className="mt-16 grid md:grid-cols-3 gap-6">
-          <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all hover:scale-105">
-            <img src="https://cdn.poehali.dev/files/ae4fe3d4-f9ce-4764-afcc-ca4e91bfad99.png" alt="Telegram бот - Старт" className="w-full h-full object-cover aspect-[9/16]" />
+          <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all hover:scale-105 bg-white">
+            <img src="https://cdn.poehali.dev/files/ae4fe3d4-f9ce-4764-afcc-ca4e91bfad99.png" alt="Telegram бот - Старт" className="w-full h-auto object-contain" />
           </Card>
-          <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all hover:scale-105">
-            <img src="https://cdn.poehali.dev/files/27a71992-a811-4687-be1a-fea669583dbb.png" alt="Telegram бот - Помощь" className="w-full h-full object-cover aspect-[9/16]" />
+          <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all hover:scale-105 bg-white">
+            <img src="https://cdn.poehali.dev/files/27a71992-a811-4687-be1a-fea669583dbb.png" alt="Telegram бот - Помощь" className="w-full h-auto object-contain" />
           </Card>
-          <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all hover:scale-105">
-            <img src="https://cdn.poehali.dev/files/af060e54-d96c-48a7-aa53-05f05f009dcf.png" alt="Telegram бот - Маршруты" className="w-full h-full object-cover aspect-[9/16]" />
+          <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all hover:scale-105 bg-white">
+            <img src="https://cdn.poehali.dev/files/af060e54-d96c-48a7-aa53-05f05f009dcf.png" alt="Telegram бот - Маршруты" className="w-full h-auto object-contain" />
           </Card>
         </div>
       </div>
