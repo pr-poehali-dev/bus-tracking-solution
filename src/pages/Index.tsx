@@ -58,28 +58,25 @@ const Index = () => {
                   Открыть Telegram бота
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8">
-                <Icon name="Play" className="mr-2" size={20} />
-                Посмотреть демо
-              </Button>
+
             </div>
           </div>
 
           <div className="mt-16 grid md:grid-cols-3 gap-6">
-            <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all">
-              <img src="https://cdn.poehali.dev/files/ae4fe3d4-f9ce-4764-afcc-ca4e91bfad99.png" alt="Telegram бот - Старт" className="w-full h-auto" />
+            <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all hover:scale-105">
+              <img src="https://cdn.poehali.dev/files/ae4fe3d4-f9ce-4764-afcc-ca4e91bfad99.png" alt="Telegram бот - Старт" className="w-full h-full object-cover aspect-[9/16]" />
             </Card>
-            <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all">
-              <img src="https://cdn.poehali.dev/files/27a71992-a811-4687-be1a-fea669583dbb.png" alt="Telegram бот - Помощь" className="w-full h-auto" />
+            <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all hover:scale-105">
+              <img src="https://cdn.poehali.dev/files/27a71992-a811-4687-be1a-fea669583dbb.png" alt="Telegram бот - Помощь" className="w-full h-full object-cover aspect-[9/16]" />
             </Card>
-            <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all">
-              <img src="https://cdn.poehali.dev/files/af060e54-d96c-48a7-aa53-05f05f009dcf.png" alt="Telegram бот - Маршруты" className="w-full h-auto" />
+            <Card className="overflow-hidden border-2 shadow-lg hover:shadow-xl transition-all hover:scale-105">
+              <img src="https://cdn.poehali.dev/files/af060e54-d96c-48a7-aa53-05f05f009dcf.png" alt="Telegram бот - Маршруты" className="w-full h-full object-cover aspect-[9/16]" />
             </Card>
           </div>
         </div>
       </section>
 
-      <section id="about" className="py-20 px-4 bg-white">
+      <section id="about" className="py-20 px-4 bg-gradient-to-b from-white to-accent/10">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4">Что это за проблема?</h2>
@@ -94,7 +91,7 @@ const Index = () => {
               { icon: 'Snowflake', title: 'Мерзнешь зимой', desc: 'Стоишь на холоде, потому что не знаешь когда приедет' },
               { icon: 'AlertCircle', title: 'Опаздываешь', desc: 'Пропускаешь пары из-за непредсказуемого транспорта' }
             ].map((item, idx) => (
-              <Card key={idx} className="border-2 hover:shadow-lg transition-all hover:-translate-y-1">
+              <Card key={idx} className="border-2 hover:shadow-xl transition-all hover:-translate-y-2 hover:border-primary/30">
                 <CardHeader>
                   <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
                     <Icon name={item.icon as any} className="text-primary" size={28} />
@@ -141,7 +138,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="features" className="py-20 px-4 bg-white">
+      <section id="features" className="py-20 px-4 bg-gradient-to-b from-accent/10 to-white">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4">Как мы решаем проблему?</h2>
@@ -175,7 +172,7 @@ const Index = () => {
                 features: ['Репорты от пассажиров', 'Рейтинг водителей', 'Чат пользователей']
               }
             ].map((feature, idx) => (
-              <Card key={idx} className="border-2 hover:shadow-xl transition-all hover:-translate-y-2">
+              <Card key={idx} className="border-2 hover:shadow-xl transition-all hover:scale-105 hover:border-secondary/50">
                 <CardHeader>
                   <div className="w-16 h-16 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-2xl flex items-center justify-center mb-4">
                     <Icon name={feature.icon as any} className="text-primary" size={32} />
@@ -199,7 +196,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-gradient-to-br from-primary/5 to-secondary/5">
+      <section className="py-20 px-4 bg-gradient-to-br from-secondary/5 via-primary/5 to-accent/10">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold font-heading mb-4">Кому подходит?</h2>
@@ -257,7 +254,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-gradient-to-b from-white to-accent/5">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <Badge className="mb-4 bg-secondary/10 text-secondary border-secondary/20">Прозрачные условия</Badge>
@@ -276,16 +273,16 @@ const Index = () => {
               },
               {
                 name: 'Студент',
-                price: '300 ₽',
+                price: '199 ₽',
                 period: 'в месяц',
-                features: ['Отслеживание в реальном времени', 'Неограниченные push-уведомления', 'Без рекламы', 'История поездок', 'Приоритетная поддержка'],
+                features: ['Отслеживание всех маршрутов', 'Уведомления о прибытии', 'История поездок за месяц', 'Карта в реальном времени', 'Техподдержка в рабочие дни'],
                 popular: true
               },
               {
                 name: 'Семестр',
-                price: '3000 ₽',
+                price: '899 ₽',
                 period: '6 месяцев',
-                features: ['Все возможности тарифа Студент', 'Экономия 50%', 'Статистика за семестр', 'Раннее получение новых функций', 'Значок активного пользователя'],
+                features: ['Все возможности тарифа Студент', 'Экономия 25% (150₽/мес)', 'Статистика за весь семестр', 'Приоритетная техподдержка 24/7', 'Ранний доступ к новым функциям'],
                 popular: false
               }
             ].map((plan, idx) => (
